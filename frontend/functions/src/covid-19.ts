@@ -27,7 +27,7 @@ export const covid19 = functions.https.onRequest(async (request, response) => {
         code: "dz",
         name_en: "Algeria",
         name_ar: "الجزائر",
-        confirm: dz.totalCases,
+        confirm: dz.totalCases.replace(/\D/g, ""),
         heal: dz.totalRecovered.replace(/\D/g, ""),
         dead: dz.totalDeath.replace(/\D/g, ""),
       },
