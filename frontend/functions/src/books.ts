@@ -1,5 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as path from "path";
+import * as fs from "fs";
 import axios from "axios";
 
 const backendURL = process.env.NODE_ENV === "development" ? "http://127.0.0.1:9090" : "https://data.zakiii.com";
